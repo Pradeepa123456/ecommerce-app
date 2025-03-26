@@ -1,0 +1,62 @@
+@import "variables";
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  
+    .product-card {
+      background: $background-color;
+      padding: $padding;
+      border-radius: $border-radius;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      
+      img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: $border-radius;
+      }
+  
+      h3 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+  
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        color: $primary-color;
+      }
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  
+  .product-details {
+    text-align: center;
+    padding: 20px;
+  
+    img {
+      max-width: 300px;
+      border-radius: $border-radius;
+    }
+  
+    h2 {
+      margin: 15px 0;
+    }
+  
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
+  

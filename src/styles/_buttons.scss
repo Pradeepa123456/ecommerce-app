@@ -1,0 +1,22 @@
+button {
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: 0.3s;
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  
+    &.danger {
+      background-color: $danger-color;
+  
+      &:hover {
+        background-color: darken($danger-color, 10%);
+      }
+    }
+  }
+  
